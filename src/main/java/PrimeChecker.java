@@ -44,17 +44,17 @@ import static java.lang.System.in;
 
 class Prime {
 
-    public void checkPrime(Object... arguments){
-        for (Object o : arguments) {
-            if (isPrime((int) o)) System.out.print((int) o + " ");
+    public void checkPrime(int... arguments){
+        for (int num : arguments) {
+            if (isPrime(num)) System.out.print(num + " ");
         }
         System.out.println("");
     }
 
-    private boolean isPrime(int o) {
-        if (o == 1) return false;
-        for (int i = 2; i < o; i++) {
-            if (o % i == 0) return false;
+    private boolean isPrime(int num) {
+        if (num == 1) return false;
+        for (int i = 2; i < num; i++) {
+            if (num % i == 0) return false;
         }
         return true;
     }
