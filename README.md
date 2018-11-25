@@ -1,2 +1,2 @@
 # Solutions
-Solutions to various problems in java.
+Solutions to various algorithmic questions in java.
